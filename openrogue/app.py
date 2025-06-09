@@ -6,6 +6,8 @@ except Exception:  # pragma: no cover - fallback for missing dependency
 from .map import Map
 from .score import ScoreManager
 
+from .map import Map
+
 # Mapping of movement keys and gamepad buttons
 _KEY_LEFT = pyxel.KEY_LEFT
 _KEY_RIGHT = pyxel.KEY_RIGHT
