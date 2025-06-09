@@ -22,6 +22,14 @@ pip install pyxel
 python main.py
 ```
 
+If `pyxel` cannot initialize (for example on a headless server), the game falls
+back to a minimal console mode using a built-in stub. This allows the program to
+run without opening a window, though no interactive gameplay is available.
+
 Press `Q` to quit the window.
 
 Use the arrow keys or a connected gamepad's d-pad to move the `@` character around the screen.
+
+The demo now includes a basic grid-based map. `#` tiles are impassable walls while `.` tiles are floor. Your character starts inside the room and cannot walk through walls.
+
+Each run tracks how many moves you make before quitting. Scores are saved to `scores.json` and the best score is shown in the top-left corner of the screen.
