@@ -24,7 +24,6 @@ def open_editor(resource: str):
     except Exception:
         print(f"Cannot open editor for {resource}")
 
-
 def save_table(name: str, data):
     path = ASSET_DIR / f"{name}.json"
     try:
