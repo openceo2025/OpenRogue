@@ -1,0 +1,4 @@
+[
+  {"id": "potion", "name": "Healing Potion", "effect": "heal", "gfx": "items.pyxres:0"},
+  {"id": "scroll", "name": "Magic Scroll", "effect": "spell", "gfx": "items.pyxres:1"}
+]
