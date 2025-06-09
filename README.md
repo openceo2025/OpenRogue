@@ -15,11 +15,13 @@ The `openrogue` package holds the game code, and `main.py` launches a minimal wi
 
 ## Running locally
 
-Install the dependencies and start the demo:
+Install the dependency and start the demo:
 
 ```bash
-pip install -r requirements.txt
+pip install pyxel
 python main.py
 ```
 
 Press `Q` to quit the window.
+
+Use the arrow keys or a connected gamepad's d-pad to move the `@` character around the screen.
