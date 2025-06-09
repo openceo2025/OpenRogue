@@ -1,0 +1,4 @@
+[
+  {"id": "slime", "name": "Slime", "hp": 5, "gfx": "monsters.pyxres:0"},
+  {"id": "goblin", "name": "Goblin", "hp": 8, "gfx": "monsters.pyxres:1"}
+]
