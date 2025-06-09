@@ -2,7 +2,8 @@ import pyxel
 
 class OpenRogue:
     def __init__(self):
-        pyxel.init(160, 120, caption="OpenRogue")
+        # "caption" is deprecated; use "title" for window text
+        pyxel.init(160, 120, title="OpenRogue")
 
     def update(self):
         if pyxel.btnp(pyxel.KEY_Q):

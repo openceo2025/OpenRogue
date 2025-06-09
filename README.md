@@ -15,10 +15,10 @@ The `openrogue` package holds the game code, and `main.py` launches a minimal wi
 
 ## Running locally
 
-Install the dependency and start the demo:
+Install the dependencies and start the demo:
 
 ```bash
-pip install pyxel
+pip install -r requirements.txt
 python main.py
 ```
 
