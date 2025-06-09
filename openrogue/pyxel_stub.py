@@ -6,6 +6,8 @@ class PyxelStub:
     KEY_Q = 4
     KEY_M = 5
     KEY_I = 6
+    KEY_P = 7
+    KEY_O = 8
 
     GAMEPAD1_BUTTON_DPAD_LEFT = 10
     GAMEPAD1_BUTTON_DPAD_RIGHT = 11

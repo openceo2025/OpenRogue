@@ -32,6 +32,9 @@ Press `M` to open the monster texture file in the Pyxel editor, or `I` to open
 the item texture file. Editing and saving these `.pyxres` files will let the
 game use your updated sprites.
 
+Press `P` to edit monster parameters or `O` to edit item parameters. Use the
+arrow keys to change values and press `Q` to save and return to the game.
+
 Use the arrow keys or a connected gamepad's d-pad to move the `@` character around the screen.
 
 The demo now includes a basic grid-based map. `#` tiles are impassable walls while `.` tiles are floor. Your character starts inside the room and cannot walk through walls.

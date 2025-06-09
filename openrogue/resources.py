@@ -24,3 +24,11 @@ def open_editor(resource: str):
     except Exception:
         print(f"Cannot open editor for {resource}")
 
+def save_table(name: str, data):
+    path = ASSET_DIR / f"{name}.json"
+    try:
+        with path.open("w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+    except OSError:
+        print(f"Cannot save {name}.json")
+
