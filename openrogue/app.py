@@ -1,6 +1,5 @@
 import pyxel
 
-
 # Mapping of movement keys and gamepad buttons
 _KEY_LEFT = pyxel.KEY_LEFT
 _KEY_RIGHT = pyxel.KEY_RIGHT
