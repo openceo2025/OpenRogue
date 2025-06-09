@@ -5,6 +5,7 @@ except Exception:  # pragma: no cover - fallback for missing dependency
 
 from .map import Map
 from .score import ScoreManager
+from .resources import open_editor
 
 from .map import Map
 
@@ -13,6 +14,8 @@ _KEY_LEFT = pyxel.KEY_LEFT
 _KEY_RIGHT = pyxel.KEY_RIGHT
 _KEY_UP = pyxel.KEY_UP
 _KEY_DOWN = pyxel.KEY_DOWN
+_KEY_MONSTER_EDIT = pyxel.KEY_M
+_KEY_ITEM_EDIT = pyxel.KEY_I
 
 _BTN_LEFT = pyxel.GAMEPAD1_BUTTON_DPAD_LEFT
 _BTN_RIGHT = pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT
@@ -47,6 +50,12 @@ class OpenRogue:
         if pyxel.btnp(pyxel.KEY_Q):
             self.scores.add_score(self.moves)
             pyxel.quit()
+
+        if pyxel.btnp(_KEY_MONSTER_EDIT):
+            open_editor("monsters.pyxres")
+
+        if pyxel.btnp(_KEY_ITEM_EDIT):
+            open_editor("items.pyxres")
 
         dx = dy = 0
 

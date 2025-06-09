@@ -4,6 +4,8 @@ class PyxelStub:
     KEY_UP = 2
     KEY_DOWN = 3
     KEY_Q = 4
+    KEY_M = 5
+    KEY_I = 6
 
     GAMEPAD1_BUTTON_DPAD_LEFT = 10
     GAMEPAD1_BUTTON_DPAD_RIGHT = 11
@@ -41,4 +43,16 @@ class PyxelStub:
         update()
         draw()
 
+
+class EditorStub:
+    def run(self, path=None):
+        print(f"[Pyxel stub] editor open for {path}")
+
+
+class ToolsStub:
+    def __init__(self):
+        self.editor = EditorStub()
+
+
 pyxel = PyxelStub()
+pyxel.tools = ToolsStub()
