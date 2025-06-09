@@ -25,3 +25,5 @@ python main.py
 Press `Q` to quit the window.
 
 Use the arrow keys or a connected gamepad's d-pad to move the `@` character around the screen.
+
+The demo now includes a basic grid-based map. `#` tiles are impassable walls while `.` tiles are floor. Your character starts inside the room and cannot walk through walls.
