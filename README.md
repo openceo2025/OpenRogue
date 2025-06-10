@@ -22,20 +22,19 @@ pip install pyxel
 python main.py
 ```
 
-If `pyxel` cannot initialize (for example on a headless server), the game falls
-back to a minimal console mode using a built-in stub. This allows the program to
-run without opening a window, though no interactive gameplay is available.
+## Controls
 
-Press `Q` to quit the window.
+While the demo is running you can use the following keys (or a gamepad's d‑pad) to play:
 
-Press `M` to open the monster texture file in the Pyxel editor, or `I` to open
-the item texture file. Editing and saving these `.pyxres` files will let the
-game use your updated sprites.
+- **Arrow keys / d‑pad**: Move the `@` character around the map when not editing. (矢印キー／十字キー：編集していない時に`@`キャラクターを移動)
+- **Q**: Quit the game and save your score. When editing parameters, this key saves changes and returns to the game. (Qキー：ゲーム終了とスコア保存、編集中は変更を保存して戻る)
+- **M**: Open `monsters.pyxres` in the Pyxel editor to modify monster graphics. (Mキー：Pyxelエディタで`monsters.pyxres`を開きモンスター画像を編集)
+- **I**: Open `items.pyxres` in the Pyxel editor to modify item graphics. (Iキー：Pyxelエディタで`items.pyxres`を開きアイテム画像を編集)
+- **P**: Edit monster parameters. Use **UP/DOWN** to choose an entry and **LEFT/RIGHT** to adjust its HP. (Pキー：モンスターのパラメータ編集、上下キーで項目選択、左右キーでHP調整)
+- **O**: Edit item parameters. Use **UP/DOWN** to choose an entry and **LEFT/RIGHT** to toggle its effect between "heal" and "spell". (Oキー：アイテムのパラメータ編集、上下キーで項目選択、左右キーで効果切替)
 
-Press `P` to edit monster parameters or `O` to edit item parameters. Use the
-arrow keys to change values and press `Q` to save and return to the game.
+If `pyxel` cannot initialize (for example on a headless server), the game falls back to a minimal console mode using a built-in stub. This allows the program to run without opening a window, though no interactive gameplay is available.
 
-Use the arrow keys or a connected gamepad's d-pad to move the `@` character around the screen.
 
 The demo now includes a basic grid-based map. `#` tiles are impassable walls while `.` tiles are floor. Your character starts inside the room and cannot walk through walls.
 
